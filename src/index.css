@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: agrandir;
+  src: url('./Assets/agrandirFont/Agrandir-Regular.otf');
+}
+@font-face {
+  font-family: agrandirBold;  
+  src: url('./Assets/agrandirFont/Agrandir-GrandHeavy.otf');
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  /* width: 10px; */
+  display: none;
+
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: agrandir;
+}
+
+
+.investing-banner {
+  height: 800px;
+}
+
+.inveting-display {
+  height: 450px;
+  background: limegreen;
+  background-image: url("Assets/investingrays.png");
+  background-repeat: no-repeat;
+}
+
+.investing-title {
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+  padding-top: 130px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.testimonial-container {
+  height: 400px;
+  display: flex;
+  margin: 0 40px;
+}
+
+.testimonial-display {
+  height: 350px;
+  flex: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-logo {
+  transform-style: preserve-3d;
+}
+
+.testimonial-content-display {
+  height: 200px;
+  margin: 30px 60px;
+}
+
+.stock-display {
+  float: right;
+  display: flex;
+}
+
+.testimonial-title {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+.testimonial-tagline {
+  color: #000000;
+  font-size: 16px;
+  text-align: left;
+  font-family: sans-serif;
+  padding-top: 15px;
+}
+
+.floor {
+  width: 100%;
+}
+
+.graph {
+  position: absolute;
+}
+
+.end-footer {
+  display: flex;
+  margin: 0px 40px;
+  height: 4rem;
+  position: relative;
+  top: -70px;
+}
+
+.end-buttons {
+  border: 1px solid rgb(23, 5, 5);
+  border-radius: 8px;
+  width: 9rem;
+  height: 3rem;
+  margin: 5px 5px;
+  display: flex;
+}
+
+.icon {
+  margin: 10px;
+}
+
+.end-title {
+  align-items: center;
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.end-content-container {
+  display: flex;
+  margin: 0 10rem 0 18rem;
+}
+
+.end-content {
+  font-size: 10px;
+  margin: 0;
+  text-align: left;
+  color: rgb(23, 12, 12);
+  
+}
+
+.end-social-icons {
+  display: flex;
+  width: 10rem;
+  height: 3rem;
+  margin: 5px 0;
+}
+
+.end-s-icon {
+  width: 60px;
+  color: white;
+  margin: auto;
+}
+
+@media screen and (max-width: 960px) {
+  .inveting-display {
+      height: auto;
+      background-size: contain;
+  }
+
+  .investing-title {
+      font-size: 22px;
+      padding-top: 33px;
+      padding-bottom: 10px;
+  }
+
+  .testimonial-container {
+      display: block;
+      height: auto;
+  }
+
+  .testimonial-content-display {
+      margin: 0;
+  }
+
+  .graph {
+      position: absolute;
+      width: 200px;
+  }
+  .end-content{
+    margin: 32px 0;
+
+  }
+  .end-footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .end-social-icons{
+    padding-bottom: 32px;
+  }
+  .end-content-container {
+      margin: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+.end-footer{
+  top: 52px;
+}
+.end-content-container {
+  display: flex;
+  margin:5px;
+}
+}
